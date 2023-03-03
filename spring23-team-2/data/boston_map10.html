@@ -1,0 +1,5445 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4ba36c7080958e433afe0f66635a1f2b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_4ba36c7080958e433afe0f66635a1f2b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4ba36c7080958e433afe0f66635a1f2b = L.map(
+                "map_4ba36c7080958e433afe0f66635a1f2b",
+                {
+                    center: [42.3601, -71.0589],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_001b52fbb27cbda9673f7fe540d606e8 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            var marker_599cd65bd3c127fe664986fee6d8df72 = L.marker(
+                [42.2787018370653, -71.1312628936177],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_599cd65bd3c127fe664986fee6d8df72.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c8e9dfbae4c9a85da5df329f7fed0c4b = L.marker(
+                [42.2782212904192, -71.1303750940123],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_c8e9dfbae4c9a85da5df329f7fed0c4b.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cda70fa35daa4c187c5281dda4495a34 = L.marker(
+                [42.2782111332115, -71.130123968178],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_cda70fa35daa4c187c5281dda4495a34.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_50bddd91d7d636c5e5a514d6aff41610 = L.marker(
+                [42.2783096385166, -71.1302612388383],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_50bddd91d7d636c5e5a514d6aff41610.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_505f6d27521420c4b08207ffa7918f27 = L.marker(
+                [42.2783208877294, -71.130011306865],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_505f6d27521420c4b08207ffa7918f27.bindTooltip(
+                `<div>
+                     Fixed pinch point <36” sidewalk width
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4e2f779376204dae2f1666ee1bb08a95 = L.marker(
+                [42.2783989110179, -71.1299107746049],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_4e2f779376204dae2f1666ee1bb08a95.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_59e0eb18b463952db754e24f7fd5e162 = L.marker(
+                [42.2784856377877, -71.1298072275987],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_59e0eb18b463952db754e24f7fd5e162.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_da3b07a52305708c9a01b7cb181bce05 = L.marker(
+                [42.2786574539433, -71.1298294474273],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_da3b07a52305708c9a01b7cb181bce05.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_69b1c1096cc278017c22960ccd22aadb = L.marker(
+                [42.278583153003, -71.1296964284933],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_69b1c1096cc278017c22960ccd22aadb.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_24e32b56e3cf06df919957cd1514b624 = L.marker(
+                [42.2786409088815, -71.1296286281472],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_24e32b56e3cf06df919957cd1514b624.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_231c7c5ee5acf31cc610d9b13483a378 = L.marker(
+                [42.2787217372463, -71.1297574537455],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_231c7c5ee5acf31cc610d9b13483a378.bindTooltip(
+                `<div>
+                     Fixed pinch point <36” sidewalk width
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_86136e73bb764671018c2451262b9a71 = L.marker(
+                [42.2788108629418, -71.1296706773873],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_86136e73bb764671018c2451262b9a71.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b01880e51fad487461227f98056c42db = L.marker(
+                [42.2787567242229, -71.129548325049],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_b01880e51fad487461227f98056c42db.bindTooltip(
+                `<div>
+                     Fixed pinch point <36” sidewalk width
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6484b39c37aed70f1ced36105eb737cb = L.marker(
+                [42.2788596937599, -71.1293876398009],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_6484b39c37aed70f1ced36105eb737cb.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5040ec53ff0b6eb46c10cb0a7702c4de = L.marker(
+                [42.2780732463958, -71.1292859648837],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_5040ec53ff0b6eb46c10cb0a7702c4de.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b49c36fb5aefddbbc50525d2e2efd291 = L.marker(
+                [42.2782884049157, -71.129242170217],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_b49c36fb5aefddbbc50525d2e2efd291.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b21480db18510b8ced27bb670450b864 = L.marker(
+                [42.2776360625663, -71.1337953522015],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_b21480db18510b8ced27bb670450b864.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_05ade80845511b4da7c05e44bf7c9c2d = L.marker(
+                [42.2784514010495, -71.1330201034164],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_05ade80845511b4da7c05e44bf7c9c2d.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_86d0995639b7b5680814fca42221e55f = L.marker(
+                [42.2785620617289, -71.1328679036544],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_86d0995639b7b5680814fca42221e55f.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c98954c98eca0129aba98c3f48c6191a = L.marker(
+                [42.2820032981836, -71.1295350452542],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_c98954c98eca0129aba98c3f48c6191a.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_080d797db3426a0af184797edd505aa7 = L.marker(
+                [42.3867639479677, -71.074134623854],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_080d797db3426a0af184797edd505aa7.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_10ac8e26bb4cc979731ee79de111f4d3 = L.marker(
+                [42.3780056061286, -71.0498027285075],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_10ac8e26bb4cc979731ee79de111f4d3.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a0f53dfb52940c88a4a705671a28e017 = L.marker(
+                [42.3780374249904, -71.0498455880281],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_a0f53dfb52940c88a4a705671a28e017.bindTooltip(
+                `<div>
+                     Fixed pinch point <36” sidewalk width
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e604f23c239d28c49c368dc40491974e = L.marker(
+                [42.3783350625248, -71.0501674265466],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_e604f23c239d28c49c368dc40491974e.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ed71e27f584d3dffe637f02d2d3d1460 = L.marker(
+                [42.3783635519666, -71.0501999877807],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_ed71e27f584d3dffe637f02d2d3d1460.bindTooltip(
+                `<div>
+                     Fixed pinch point <36” sidewalk width
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0538bd180bc9f15d92e022f2a594c482 = L.marker(
+                [42.379152551478, -71.051486302504],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_0538bd180bc9f15d92e022f2a594c482.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b6116be2ce913d9691c2ff64c873217f = L.marker(
+                [42.3792766034638, -71.0516889768052],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_b6116be2ce913d9691c2ff64c873217f.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_18323a9679c1d5ec9f30f973894104de = L.marker(
+                [42.3785815761965, -71.0524236504856],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_18323a9679c1d5ec9f30f973894104de.bindTooltip(
+                `<div>
+                     Fixed pinch point <36” sidewalk width
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_722a96d6250bd05217e8070e4a214e0c = L.marker(
+                [42.2831031645929, -71.1265496246631],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_722a96d6250bd05217e8070e4a214e0c.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_52909b2a74fb2a8e7b14e5f68f680c05 = L.marker(
+                [42.2831630151338, -71.126462896814],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_52909b2a74fb2a8e7b14e5f68f680c05.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_984985a7afbf643d032355dd3d929308 = L.marker(
+                [42.2819720760435, -71.1254830773841],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_984985a7afbf643d032355dd3d929308.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ced3807793c4b8f678814138391bec64 = L.marker(
+                [42.311021045512, -71.0875169856433],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_ced3807793c4b8f678814138391bec64.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4ffb0717eaacdb60b791891d2d91a55d = L.marker(
+                [42.2816645267024, -71.1258518483847],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_4ffb0717eaacdb60b791891d2d91a55d.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a2319b4cf0f878a366485ff98697f544 = L.marker(
+                [42.2815347265249, -71.1261109305975],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_a2319b4cf0f878a366485ff98697f544.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f93cf5e6e25855718d027f636d1f21a3 = L.marker(
+                [42.2816302099437, -71.1261113968231],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_f93cf5e6e25855718d027f636d1f21a3.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_96e0c60ae990ac91a00cd130331ab9e1 = L.marker(
+                [42.2814602222813, -71.1264280349944],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_96e0c60ae990ac91a00cd130331ab9e1.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a02114279d5a8bc4403abc65153d58f8 = L.marker(
+                [42.3111527300115, -71.0868857511713],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_a02114279d5a8bc4403abc65153d58f8.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e0ad68a6b8f37a3b3c137494012e228b = L.marker(
+                [42.3103887921273, -71.0851313306416],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_e0ad68a6b8f37a3b3c137494012e228b.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_60e64ca5d84fc64bcb4bbaad48f50ee6 = L.marker(
+                [42.2798945553818, -71.127596383853],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_60e64ca5d84fc64bcb4bbaad48f50ee6.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_231141b20a6bdc9d485dd274108c3eb4 = L.marker(
+                [42.2805901236182, -71.1274981926025],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_231141b20a6bdc9d485dd274108c3eb4.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1433ff305e27051c628889c71bb4e97c = L.marker(
+                [42.3096226002328, -71.0835638540141],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_1433ff305e27051c628889c71bb4e97c.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ea5d236077a6090a070d5f7a93f03138 = L.marker(
+                [42.2817029374706, -71.1280661434578],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_ea5d236077a6090a070d5f7a93f03138.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7d88af3da14677dc12048928708ff805 = L.marker(
+                [42.3085179028227, -71.0848330270852],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_7d88af3da14677dc12048928708ff805.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_62c1ae02a4507f032a38918ad8a82858 = L.marker(
+                [42.2776585997806, -71.1276013371635],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_62c1ae02a4507f032a38918ad8a82858.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9d8f6d423ad20c4b2115700afccf8cdc = L.marker(
+                [42.2776290544136, -71.1276434358109],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_9d8f6d423ad20c4b2115700afccf8cdc.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_db7498ebb9a34c5c1f655ce100ea97f1 = L.marker(
+                [42.3087168606507, -71.0857693393092],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_db7498ebb9a34c5c1f655ce100ea97f1.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3cdc1141bb93b094f2cf1ade51657480 = L.marker(
+                [42.3087961483779, -71.0857068255486],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_3cdc1141bb93b094f2cf1ade51657480.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_96782065877156a30681afd06d729549 = L.marker(
+                [42.3089323430024, -71.0855886925972],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_96782065877156a30681afd06d729549.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cdbd6abae7752abe4259e124d3ce7b2a = L.marker(
+                [42.277888767632, -71.1242430654238],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_cdbd6abae7752abe4259e124d3ce7b2a.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_44780a7279940748c990149ecc31d2d7 = L.marker(
+                [42.2785552544029, -71.1208857782378],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_44780a7279940748c990149ecc31d2d7.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3ded5d90e2de6fb11bd7bec43eb2cf11 = L.marker(
+                [42.2800239734511, -71.1220456658646],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_3ded5d90e2de6fb11bd7bec43eb2cf11.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_81a4255e39a38918e7f23373d9d9c269 = L.marker(
+                [42.2807158562406, -71.123942293297],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_81a4255e39a38918e7f23373d9d9c269.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a148484d1e905b5ccf5333e18d3a154f = L.marker(
+                [42.3774761812737, -71.050297124409],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_a148484d1e905b5ccf5333e18d3a154f.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_508b66ca6f8467c99389811283728870 = L.marker(
+                [42.3773992018594, -71.0504026764549],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_508b66ca6f8467c99389811283728870.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_003bbb87dd2fbaa28a1b7a320be59714 = L.marker(
+                [42.3772979051892, -71.0505346596314],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_003bbb87dd2fbaa28a1b7a320be59714.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e1a3da5956b5166cdbf888226c01a635 = L.marker(
+                [42.3772314404004, -71.0506174429781],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_e1a3da5956b5166cdbf888226c01a635.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a9ff714a5bd0c9b5c8aa927728f76976 = L.marker(
+                [42.3773937019042, -71.0515451179006],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_a9ff714a5bd0c9b5c8aa927728f76976.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_15bb6722d2c97da348b525a38fd97351 = L.marker(
+                [42.3781335756016, -71.0521570053564],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_15bb6722d2c97da348b525a38fd97351.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0f42fb8e82c48dd0325c87febcd7d614 = L.marker(
+                [42.3784440883875, -71.0521970450652],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_0f42fb8e82c48dd0325c87febcd7d614.bindTooltip(
+                `<div>
+                     Fixed pinch point <36” sidewalk width
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ae745f5871a9f656bc8a02d10c680986 = L.marker(
+                [42.3784722207667, -71.052223154599],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_ae745f5871a9f656bc8a02d10c680986.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c55faecd3db4bc851f18dabd82db5769 = L.marker(
+                [42.3786572993102, -71.0523264357038],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_c55faecd3db4bc851f18dabd82db5769.bindTooltip(
+                `<div>
+                     Fixed pinch point <36” sidewalk width
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a52e278637d9e25b24db8834661ff5b8 = L.marker(
+                [42.3764705626352, -71.0527783511738],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_a52e278637d9e25b24db8834661ff5b8.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cf896df84aaf37735f9ff5cd5f3ed229 = L.marker(
+                [42.3768505331658, -71.0532476535361],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_cf896df84aaf37735f9ff5cd5f3ed229.bindTooltip(
+                `<div>
+                     Fixed pinch point <36” sidewalk width
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2e70b4f9ac75d1c1f71d4c9e0e51e632 = L.marker(
+                [42.3771029236033, -71.0534573607476],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_2e70b4f9ac75d1c1f71d4c9e0e51e632.bindTooltip(
+                `<div>
+                     Fixed pinch point <36” sidewalk width
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ca9f339c86d7063142621f3527dabca6 = L.marker(
+                [42.3772234525699, -71.0532119796396],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_ca9f339c86d7063142621f3527dabca6.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3f82d3ad360e6484f247d407ae050634 = L.marker(
+                [42.3772909851088, -71.0530391473721],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_3f82d3ad360e6484f247d407ae050634.bindTooltip(
+                `<div>
+                     Fixed pinch point <36” sidewalk width
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_263c75d896b8631eea7ddc62aca30750 = L.marker(
+                [42.3776373591466, -71.0518688177284],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_263c75d896b8631eea7ddc62aca30750.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_72bbfa58b57c03ca059b3eeb28e7f238 = L.marker(
+                [42.3739291606444, -71.0518031706441],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_72bbfa58b57c03ca059b3eeb28e7f238.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_edc78696265a3a7013b41867636875c8 = L.marker(
+                [42.3738761237387, -71.0521900022734],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_edc78696265a3a7013b41867636875c8.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c664a21aa21b3f7b88e77b13a762f927 = L.marker(
+                [42.273479399235, -71.0903466976529],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_c664a21aa21b3f7b88e77b13a762f927.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7dcf1758a9af61fb77e0113fcc349cb2 = L.marker(
+                [42.272917485176, -71.0896686807175],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_7dcf1758a9af61fb77e0113fcc349cb2.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4460ed2b398c1d73fb9f72c0b077f4c8 = L.marker(
+                [42.2737751176752, -71.0893218510678],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_4460ed2b398c1d73fb9f72c0b077f4c8.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2821cfce05c60b9f2f6f98c9a72084f8 = L.marker(
+                [42.2739914421239, -71.0889347211978],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_2821cfce05c60b9f2f6f98c9a72084f8.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2199883c10436aa840b32d0e49ce4cf1 = L.marker(
+                [42.2746856298214, -71.0884964421538],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_2199883c10436aa840b32d0e49ce4cf1.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fa73c93786a6ce83b055a58e901b8baa = L.marker(
+                [42.2758065672778, -71.0874681316649],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_fa73c93786a6ce83b055a58e901b8baa.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b48aa7c79c3a0096259ef0a521816e31 = L.marker(
+                [42.3126946097203, -71.084600313121],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_b48aa7c79c3a0096259ef0a521816e31.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cb0231d1aba3bfade467db773918ee0a = L.marker(
+                [42.3128658735492, -71.0846581053364],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_cb0231d1aba3bfade467db773918ee0a.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_34bcd40e0a3174a7034692ee148aa2bd = L.marker(
+                [42.3132116680788, -71.0851061858985],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_34bcd40e0a3174a7034692ee148aa2bd.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3c486713df6bef132aa04e208dd2520c = L.marker(
+                [42.3133343370213, -71.0854086621294],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_3c486713df6bef132aa04e208dd2520c.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bd0f2ba438bba5980f8138c6a1ae56b5 = L.marker(
+                [42.3232386684627, -71.056920873716],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_bd0f2ba438bba5980f8138c6a1ae56b5.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1c5dcfaf410a5f1b8758d4e2c48a8b3c = L.marker(
+                [42.2753386175437, -71.0901580721045],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_1c5dcfaf410a5f1b8758d4e2c48a8b3c.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_076b89b8e9f233f5a2936c08aff04790 = L.marker(
+                [42.2751334684035, -71.0897241570762],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_076b89b8e9f233f5a2936c08aff04790.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5a7e2f4b09a1d112e8a8d3789f4705db = L.marker(
+                [42.2746865809914, -71.0895986750074],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_5a7e2f4b09a1d112e8a8d3789f4705db.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b917874b8ea935a7847ba03526c711c7 = L.marker(
+                [42.3186601203501, -71.0580774312881],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_b917874b8ea935a7847ba03526c711c7.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d81dfd5c09f5fb2c9fd25b792ba75806 = L.marker(
+                [42.3089984442338, -71.0783856790522],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_d81dfd5c09f5fb2c9fd25b792ba75806.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5347dc524ff8be90c46547c762a7f37d = L.marker(
+                [42.309160676654, -71.0784246407827],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_5347dc524ff8be90c46547c762a7f37d.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_65582f481609667237f4958bed74bb16 = L.marker(
+                [42.3098084249814, -71.0793308594447],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_65582f481609667237f4958bed74bb16.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7fd3f14cff286d14a52f566ff01e52f6 = L.marker(
+                [42.3177156006131, -71.0590517422487],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_7fd3f14cff286d14a52f566ff01e52f6.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_29968e5e14669ab243fa7fdf81e155a5 = L.marker(
+                [42.317806075991, -71.0592930494969],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_29968e5e14669ab243fa7fdf81e155a5.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8f370581ba90f28d56960809466afbc0 = L.marker(
+                [42.3159249338719, -71.0597158218224],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_8f370581ba90f28d56960809466afbc0.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_51023f69ebfd33fd5acc2aa44c90a076 = L.marker(
+                [42.3158742486254, -71.0597393280385],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_51023f69ebfd33fd5acc2aa44c90a076.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a2c27162ce932a1ae12a92834b9d73a7 = L.marker(
+                [42.313384571274, -71.0583074763577],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_a2c27162ce932a1ae12a92834b9d73a7.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a4e925a43dae447531ff74d0ee634b77 = L.marker(
+                [42.3127318603203, -71.0581746712227],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_a4e925a43dae447531ff74d0ee634b77.bindTooltip(
+                `<div>
+                     Fixed pinch point <36” sidewalk width
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ddf28d476aa0d3ac20add23a9932e82f = L.marker(
+                [42.3127079293566, -71.0580994238429],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_ddf28d476aa0d3ac20add23a9932e82f.bindTooltip(
+                `<div>
+                     Fixed pinch point <36” sidewalk width
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_63205c7a363c30b2147a450429011c2e = L.marker(
+                [42.3108371269201, -71.0586491865086],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_63205c7a363c30b2147a450429011c2e.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1845d3952be567657b5622c219784724 = L.marker(
+                [42.3104036368479, -71.0595984263879],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_1845d3952be567657b5622c219784724.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5227f738f91f137dbe1b975ea015ae63 = L.marker(
+                [42.3101105277038, -71.0581476193562],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_5227f738f91f137dbe1b975ea015ae63.bindTooltip(
+                `<div>
+                     Fixed pinch point <36” sidewalk width
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_59503b69869ea0130de0d8a773a16892 = L.marker(
+                [42.310033269789, -71.0582163180176],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_59503b69869ea0130de0d8a773a16892.bindTooltip(
+                `<div>
+                     Fixed pinch point <36” sidewalk width
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d7d59718a35146655efc82174b568110 = L.marker(
+                [42.3175119325623, -71.0825152550746],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_d7d59718a35146655efc82174b568110.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a0fa318861663b9e34a873f8c2abbfcf = L.marker(
+                [42.3176561814473, -71.0824204136418],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_a0fa318861663b9e34a873f8c2abbfcf.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a662da4f96a6d5c5542640f89384abae = L.marker(
+                [42.3105367203488, -71.0593825935644],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_a662da4f96a6d5c5542640f89384abae.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0ea90d558680ba9c63b92aae4d57c0f0 = L.marker(
+                [42.3111431108856, -71.0594776227451],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_0ea90d558680ba9c63b92aae4d57c0f0.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0730b56ab53261bd41dbd4342fd7d1c5 = L.marker(
+                [42.3186563017206, -71.0818946773167],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_0730b56ab53261bd41dbd4342fd7d1c5.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ec8b220ec5fc85f9045e2d9588ea00f9 = L.marker(
+                [42.2861162528565, -71.1260540465787],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_ec8b220ec5fc85f9045e2d9588ea00f9.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d7b7166123a9ee5916c0d5e4649cf372 = L.marker(
+                [42.2857470095981, -71.1265111031071],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_d7b7166123a9ee5916c0d5e4649cf372.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f4ab14abfba02b16fcb82824daea46e6 = L.marker(
+                [42.3119707907661, -71.0621806444518],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_f4ab14abfba02b16fcb82824daea46e6.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_43b91d9c2296f12fa49e2fb9337632f9 = L.marker(
+                [42.3123092663943, -71.0624374700966],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_43b91d9c2296f12fa49e2fb9337632f9.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ee7299891770b9d6668e25e85a5e6770 = L.marker(
+                [42.3126156331408, -71.0622856584069],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_ee7299891770b9d6668e25e85a5e6770.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3a67ca2c2ac6f6b3fbca638f640f3a10 = L.marker(
+                [42.3129404469315, -71.063071939402],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_3a67ca2c2ac6f6b3fbca638f640f3a10.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2086e9cffc14ea5317e1533e0e89b785 = L.marker(
+                [42.312965289206, -71.0632737908464],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_2086e9cffc14ea5317e1533e0e89b785.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_62b486f097f795a22fa82cadd900087e = L.marker(
+                [42.3133523230964, -71.0634246655933],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_62b486f097f795a22fa82cadd900087e.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e7abd13788fd35ed6c22a8cb7ee2c328 = L.marker(
+                [42.3135562377712, -71.0633132098193],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_e7abd13788fd35ed6c22a8cb7ee2c328.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bb1b959cdefefdd9b3be99aff36c997f = L.marker(
+                [42.3135735747826, -71.0628183162512],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_bb1b959cdefefdd9b3be99aff36c997f.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f1d2834a9c4949075bef2dbafa811cab = L.marker(
+                [42.3134641819401, -71.0625360071985],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_f1d2834a9c4949075bef2dbafa811cab.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0dd3b50a706128e8673afea2e2fab880 = L.marker(
+                [42.313429185012, -71.0624652855311],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_0dd3b50a706128e8673afea2e2fab880.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_77af492baa17b7de4ad59aa8f53c3f6e = L.marker(
+                [42.313149639342, -71.0617935630909],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_77af492baa17b7de4ad59aa8f53c3f6e.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_efcdd3700cdeeb313f11a5c41b208f20 = L.marker(
+                [42.3148677277854, -71.0813769530657],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_efcdd3700cdeeb313f11a5c41b208f20.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_11baeb267ebf1fef81f6bda5c10a6f1a = L.marker(
+                [42.3125834788984, -71.0604349303939],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_11baeb267ebf1fef81f6bda5c10a6f1a.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c17a6ffeb721fad93b3fde4097f7dc15 = L.marker(
+                [42.3129092255122, -71.0604794679674],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_c17a6ffeb721fad93b3fde4097f7dc15.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_00f73d8f2dbe4c86db56032a5a0e0f47 = L.marker(
+                [42.3137387627361, -71.061163246697],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_00f73d8f2dbe4c86db56032a5a0e0f47.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_234d9704bf479e30112321f2ba717655 = L.marker(
+                [42.3141417091739, -71.0616497329324],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_234d9704bf479e30112321f2ba717655.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0a0748e586ac29fbe4743be5d64beb2f = L.marker(
+                [42.3142750557938, -71.0615377381693],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_0a0748e586ac29fbe4743be5d64beb2f.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b5f4436cba7a6869971b332fd3755d1d = L.marker(
+                [42.3143545125514, -71.0616590044445],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_b5f4436cba7a6869971b332fd3755d1d.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a2ad47402d9119cd10618b1c95346707 = L.marker(
+                [42.3147898586069, -71.0612596646731],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_a2ad47402d9119cd10618b1c95346707.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1bbe924de68c9332c87c0403d3b8f9e9 = L.marker(
+                [42.3148566000169, -71.0612046581333],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_1bbe924de68c9332c87c0403d3b8f9e9.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_73d325e9a0b8b8155d924135d34b2636 = L.marker(
+                [42.3155579783813, -71.0613911861155],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_73d325e9a0b8b8155d924135d34b2636.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b22a436b2a5708b0680629901c026fdb = L.marker(
+                [42.3157516012398, -71.0613225404548],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_b22a436b2a5708b0680629901c026fdb.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_87d29688d665c4424a0f697c2fab355f = L.marker(
+                [42.3164173805252, -71.0608811801894],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_87d29688d665c4424a0f697c2fab355f.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bb5c82cd700b400cdad9dd0cf769f76f = L.marker(
+                [42.3165899168843, -71.0610305143256],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_bb5c82cd700b400cdad9dd0cf769f76f.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3a8ca0bd6bc4d543bbd6315602836d1a = L.marker(
+                [42.3168322655468, -71.0610052707678],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_3a8ca0bd6bc4d543bbd6315602836d1a.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2fbc8794396c159228ea85ef8b85cb70 = L.marker(
+                [42.3177758599792, -71.0606161295699],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_2fbc8794396c159228ea85ef8b85cb70.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_821734d26222faaa9651e40c413370f5 = L.marker(
+                [42.3178443371861, -71.0605896409471],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_821734d26222faaa9651e40c413370f5.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9b544357083412d168aab227a9b38c53 = L.marker(
+                [42.3179512740542, -71.0605437073917],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_9b544357083412d168aab227a9b38c53.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1da46cfacb8da05465ac0038c416a89d = L.marker(
+                [42.3181766962149, -71.0606161708924],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_1da46cfacb8da05465ac0038c416a89d.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f622d1f0781a8e7491f4a7bbff5f8d44 = L.marker(
+                [42.318036280475, -71.0600404855425],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_f622d1f0781a8e7491f4a7bbff5f8d44.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e0693fb2d566635753070297d9d12400 = L.marker(
+                [42.3181449599576, -71.0597854771896],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_e0693fb2d566635753070297d9d12400.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_09a70814ef0158773b9d9239094d68d0 = L.marker(
+                [42.3191997357409, -71.0601209925583],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_09a70814ef0158773b9d9239094d68d0.bindTooltip(
+                `<div>
+                     Fixed pinch point <36” sidewalk width
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f21c9ff8a40aab6d2e5b794fb4acbc15 = L.marker(
+                [42.3199608088742, -71.0610090239291],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_f21c9ff8a40aab6d2e5b794fb4acbc15.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_eef209439717929147a8cf4548bca031 = L.marker(
+                [42.3189825735199, -71.0604494606436],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_eef209439717929147a8cf4548bca031.bindTooltip(
+                `<div>
+                     Fixed pinch point <36” sidewalk width
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_953de4f62f4bf90d3b55c32d3612289e = L.marker(
+                [42.31890858982, -71.060494715971],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_953de4f62f4bf90d3b55c32d3612289e.bindTooltip(
+                `<div>
+                     Fixed pinch point <36” sidewalk width
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9afa5216cbc9ca2638aa0d79d85ae4d5 = L.marker(
+                [42.3201775851349, -71.0587934963674],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_9afa5216cbc9ca2638aa0d79d85ae4d5.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_35e2210872e3a72269b6719ec1b57162 = L.marker(
+                [42.3202958374668, -71.0580508016298],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_35e2210872e3a72269b6719ec1b57162.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_29165010cbf6788478c9444bdac2d55c = L.marker(
+                [42.3206510999169, -71.0571937333903],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_29165010cbf6788478c9444bdac2d55c.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bdce74d2a975528327245a955f6ff1a0 = L.marker(
+                [42.3207109712339, -71.0566344387012],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_bdce74d2a975528327245a955f6ff1a0.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7c6cc18752b47eda115af7299a43cfe0 = L.marker(
+                [42.3200084002567, -71.0567336558277],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_7c6cc18752b47eda115af7299a43cfe0.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cc22d94136ea47a8ad8e1e94331dc2d7 = L.marker(
+                [42.3137159713905, -71.0835824698018],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_cc22d94136ea47a8ad8e1e94331dc2d7.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_13521afca92c2b5bc0a2c9753dec5c13 = L.marker(
+                [42.3188113754888, -71.0818194865308],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_13521afca92c2b5bc0a2c9753dec5c13.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_14a38991420ba2015f7e498103861968 = L.marker(
+                [42.319025907985, -71.0817440747593],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_14a38991420ba2015f7e498103861968.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dde9f9d914acb147a494bf601b0c5ae4 = L.marker(
+                [42.3191546365636, -71.0817100843056],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_dde9f9d914acb147a494bf601b0c5ae4.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_232ce51ffe64228db010f46a33d40dd3 = L.marker(
+                [42.2428387423052, -71.1236709356059],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_232ce51ffe64228db010f46a33d40dd3.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_691bf68fd23ccc3b41898cf000255d97 = L.marker(
+                [42.3186525807319, -71.0806140848618],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_691bf68fd23ccc3b41898cf000255d97.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d0d119bba1ad049a9471c2faf9cd9522 = L.marker(
+                [42.3184081248431, -71.0803471468818],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_d0d119bba1ad049a9471c2faf9cd9522.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_899a391b785f74816ea32ea8144ea4e7 = L.marker(
+                [42.3185284356168, -71.0805634683888],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_899a391b785f74816ea32ea8144ea4e7.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b488edcd671cd1a7f2efff95026bc350 = L.marker(
+                [42.3189129139074, -71.0813241177539],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_b488edcd671cd1a7f2efff95026bc350.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d3e9f3b5c2099a2447931657145cd6ba = L.marker(
+                [42.2427768637174, -71.1255238429317],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_d3e9f3b5c2099a2447931657145cd6ba.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d55069cf44095f2ae2edfab4ea3bd96e = L.marker(
+                [42.2423995285091, -71.1254640304052],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_d55069cf44095f2ae2edfab4ea3bd96e.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_532e766ef6c5889514e8b85530adb1fe = L.marker(
+                [42.2423083243198, -71.1253090970698],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_532e766ef6c5889514e8b85530adb1fe.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_798e5a47d638b63e29da2431add00d18 = L.marker(
+                [42.2409710884323, -71.1252526792767],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_798e5a47d638b63e29da2431add00d18.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_56eca2f588304a08c2480f6cd7914966 = L.marker(
+                [42.2408028838409, -71.1251874714686],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_56eca2f588304a08c2480f6cd7914966.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8767baf30feba3fa404dbbb834a1eae0 = L.marker(
+                [42.2404296095945, -71.1250536036266],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_8767baf30feba3fa404dbbb834a1eae0.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_825a78255545ae612617c5a4983532e0 = L.marker(
+                [42.2408800823568, -71.1239369213716],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_825a78255545ae612617c5a4983532e0.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d9b81ede1aa96530e8a6f11b7fd150eb = L.marker(
+                [42.2409559400485, -71.1237840326018],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_d9b81ede1aa96530e8a6f11b7fd150eb.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8e94e29e349b4b6981751e5f90c0c2ee = L.marker(
+                [42.241120248411, -71.1230970271237],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_8e94e29e349b4b6981751e5f90c0c2ee.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9b8c48246efd541d190466a981537f5f = L.marker(
+                [42.2412016509343, -71.122903075464],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_9b8c48246efd541d190466a981537f5f.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_49218198618d80534c57f16b3c4ee582 = L.marker(
+                [42.2413895423106, -71.1224058795138],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_49218198618d80534c57f16b3c4ee582.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bd09966b5ee1b13b96fb8c6d0c9cec2d = L.marker(
+                [42.3174330503715, -71.0819376149907],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_bd09966b5ee1b13b96fb8c6d0c9cec2d.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bfb59bcfa9d140d6e23bde0ba2d17bfb = L.marker(
+                [42.3172955097931, -71.0817066751991],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_bfb59bcfa9d140d6e23bde0ba2d17bfb.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2a1977128619f5023ce22bf36eb92f77 = L.marker(
+                [42.3171996101586, -71.0815854789926],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_2a1977128619f5023ce22bf36eb92f77.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_595f17b879d89ff9c0d3f07c11cd82b8 = L.marker(
+                [42.3170514305716, -71.0814272254839],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_595f17b879d89ff9c0d3f07c11cd82b8.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_36e5d63391c2b15fc11a1f293cb2ceac = L.marker(
+                [42.3169107260319, -71.081216793332],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_36e5d63391c2b15fc11a1f293cb2ceac.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d261f680738d684e8bb69d611cbf502c = L.marker(
+                [42.316018523849, -71.0815216456068],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_d261f680738d684e8bb69d611cbf502c.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cfe3a2b177c786c11bed8a5e8ffc781c = L.marker(
+                [42.3157127661835, -71.0810158015753],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_cfe3a2b177c786c11bed8a5e8ffc781c.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a994e32a759ac29b148a2235d43e6b50 = L.marker(
+                [42.3156452684287, -71.0810497021975],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_a994e32a759ac29b148a2235d43e6b50.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d5bc314ab97cca52fe48616af10fb001 = L.marker(
+                [42.2429701583731, -71.1208168442178],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_d5bc314ab97cca52fe48616af10fb001.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b2f65c40e121c2675e7a81a2762c8ade = L.marker(
+                [42.2509438531221, -71.1205314781981],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_b2f65c40e121c2675e7a81a2762c8ade.bindTooltip(
+                `<div>
+                     Fixed pinch point <36” sidewalk width
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8c1a21b9b5ff79f84241a149424e2745 = L.marker(
+                [42.2509246317186, -71.1206021315935],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_8c1a21b9b5ff79f84241a149424e2745.bindTooltip(
+                `<div>
+                     Fixed pinch point <36” sidewalk width
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_50131d45877a3ddc28b85dec9561ba86 = L.marker(
+                [42.2496581612496, -71.1226739655407],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_50131d45877a3ddc28b85dec9561ba86.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_42ab26130fb0ca9c72d2a7875ca9e0a4 = L.marker(
+                [42.247978201306, -71.1242803203553],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_42ab26130fb0ca9c72d2a7875ca9e0a4.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b3247f9a4d32b9f2872019052b63bfd9 = L.marker(
+                [42.3144650742888, -71.0816777647183],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_b3247f9a4d32b9f2872019052b63bfd9.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8823f9a256bf29f33c2318433f0dd4c9 = L.marker(
+                [42.314161081355, -71.0815189740171],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_8823f9a256bf29f33c2318433f0dd4c9.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_19b44990cdee30779fb9e60f4a638e49 = L.marker(
+                [42.313613137215, -71.0812564539518],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_19b44990cdee30779fb9e60f4a638e49.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2c6492903a5ded1b2620210322d4a4a5 = L.marker(
+                [42.2444766936146, -71.1264479443561],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_2c6492903a5ded1b2620210322d4a4a5.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e98b514cf39aac54752cdc579c5ad89f = L.marker(
+                [42.3099407484336, -71.0815293693216],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_e98b514cf39aac54752cdc579c5ad89f.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b35dc5bc7966815ff173bba398335c65 = L.marker(
+                [42.3096406451644, -71.0810590895922],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_b35dc5bc7966815ff173bba398335c65.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c4b6801f6ad62a498f57177874419d90 = L.marker(
+                [42.3089585175066, -71.0798480554864],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_c4b6801f6ad62a498f57177874419d90.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ef10dd1ed7d90e010fd24763f9245b97 = L.marker(
+                [42.2518910520536, -71.134229276213],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_ef10dd1ed7d90e010fd24763f9245b97.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_645d0b0dae352967917b99b355524753 = L.marker(
+                [42.2525558389021, -71.1332277552825],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_645d0b0dae352967917b99b355524753.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_05e16625027e02be36bdcc0f3fc2bb9e = L.marker(
+                [42.25072640363, -71.133604093691],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_05e16625027e02be36bdcc0f3fc2bb9e.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ea68db83e52ee6cb8445b3eaae68e728 = L.marker(
+                [42.2506548179716, -71.133679729143],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_ea68db83e52ee6cb8445b3eaae68e728.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b6b0834e4c650da0dcba2e07a1020967 = L.marker(
+                [42.2494415591327, -71.133628959058],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_b6b0834e4c650da0dcba2e07a1020967.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d5f95b8c4d7a47cb8036eb2fb85886a5 = L.marker(
+                [42.2505942150963, -71.130945761373],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_d5f95b8c4d7a47cb8036eb2fb85886a5.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5890e8afe30ee00ab58876595e52bac9 = L.marker(
+                [42.2503056205326, -71.1310745438521],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_5890e8afe30ee00ab58876595e52bac9.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5a347b06bf215f14462cf7063da0b1d2 = L.marker(
+                [42.2495983792992, -71.1324695619113],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_5a347b06bf215f14462cf7063da0b1d2.bindTooltip(
+                `<div>
+                     Fixed pinch point <36” sidewalk width
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7a228cf49c4a5c32e8ab98e4ed6b8c2f = L.marker(
+                [42.2495011543795, -71.1325582921052],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_7a228cf49c4a5c32e8ab98e4ed6b8c2f.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c4281bd68d6f09773e41ed3bd1e68318 = L.marker(
+                [42.2494833794778, -71.1325775250354],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_c4281bd68d6f09773e41ed3bd1e68318.bindTooltip(
+                `<div>
+                     Fixed pinch point <36” sidewalk width
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1062d27dbd93ef0ece10ba200389b5b8 = L.marker(
+                [42.2491729825132, -71.1326849446788],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_1062d27dbd93ef0ece10ba200389b5b8.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7ea428193f753ab95e563596a70d7a3b = L.marker(
+                [42.248779155268, -71.132015143735],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_7ea428193f753ab95e563596a70d7a3b.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4231844936bd8aaa79869b851543efe7 = L.marker(
+                [42.2487309614545, -71.1318802437287],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_4231844936bd8aaa79869b851543efe7.bindTooltip(
+                `<div>
+                     Fixed pinch point <36” sidewalk width
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_68e9b8b820cf32777adbeabf715b7e2b = L.marker(
+                [42.2538731034071, -71.1325874972334],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_68e9b8b820cf32777adbeabf715b7e2b.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_507cad37e77300d97c4f5cae911eeefa = L.marker(
+                [42.2531382283695, -71.1327750870243],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_507cad37e77300d97c4f5cae911eeefa.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c7260bb3ec464b9f0a3d1caede110102 = L.marker(
+                [42.2532698557029, -71.1327623291506],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_c7260bb3ec464b9f0a3d1caede110102.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_55e9a2917f29df7d2fa75c177ee84b4a = L.marker(
+                [42.2554970275801, -71.1287466972355],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_55e9a2917f29df7d2fa75c177ee84b4a.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f6adbedf917e1a9885f67112c72a3f28 = L.marker(
+                [42.2554481627044, -71.1287836593162],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_f6adbedf917e1a9885f67112c72a3f28.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5954c2080f413580e0d7ee2a2c9e1869 = L.marker(
+                [42.2553181961661, -71.1286465171151],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_5954c2080f413580e0d7ee2a2c9e1869.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1d7f820c77c397ed3cc4d5a37f637afa = L.marker(
+                [42.255368291194, -71.1286376372685],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_1d7f820c77c397ed3cc4d5a37f637afa.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7ffe360d75ed5ab3c6e3e5fb76371508 = L.marker(
+                [42.255279771312, -71.1285841704411],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_7ffe360d75ed5ab3c6e3e5fb76371508.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7a5af81ebf51ec076bbb151ee36d0212 = L.marker(
+                [42.2532931616268, -71.130438932788],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_7a5af81ebf51ec076bbb151ee36d0212.bindTooltip(
+                `<div>
+                     Fixed pinch point <36” sidewalk width
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cce5cb9e044cbc3f654175a8eb29fd97 = L.marker(
+                [42.2544318467549, -71.1407059766979],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_cce5cb9e044cbc3f654175a8eb29fd97.bindTooltip(
+                `<div>
+                     Fixed pinch point <36” sidewalk width
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bc19e7324524e3206164d1f10e8f4ab5 = L.marker(
+                [42.2540111887784, -71.1396799793708],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_bc19e7324524e3206164d1f10e8f4ab5.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f906bbfd1d88a6de6711ff6a4d666118 = L.marker(
+                [42.2538610399724, -71.1394602047399],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_f906bbfd1d88a6de6711ff6a4d666118.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fc0dd18fc2b2c761402a091bba24ba1b = L.marker(
+                [42.311179676178, -71.0784607907864],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_fc0dd18fc2b2c761402a091bba24ba1b.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bc2053bc16dabb98045d1665d7c7dc18 = L.marker(
+                [42.32845688733, -71.0726072902416],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_bc2053bc16dabb98045d1665d7c7dc18.bindTooltip(
+                `<div>
+                     Fixed pinch point <36” sidewalk width
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c98b614bffcc9170a3bd713f7864eb17 = L.marker(
+                [42.3294628600786, -71.0722796593861],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_c98b614bffcc9170a3bd713f7864eb17.bindTooltip(
+                `<div>
+                     Fixed pinch point <36” sidewalk width
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1cd9fdf85d4d198e2bccefc1f41fc7d0 = L.marker(
+                [42.3115623705487, -71.0762652408583],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_1cd9fdf85d4d198e2bccefc1f41fc7d0.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_60608572bb149b2051952379324e2486 = L.marker(
+                [42.2499278223317, -71.1262361117306],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_60608572bb149b2051952379324e2486.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4249cfc48e488f22658cdeed09de0fd4 = L.marker(
+                [42.2513785304289, -71.1255362702254],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_4249cfc48e488f22658cdeed09de0fd4.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f51d89598993629ca826283ebf954632 = L.marker(
+                [42.2516186625037, -71.1255828317032],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_f51d89598993629ca826283ebf954632.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8cc72e91cc2874e4caf4e6d99162165a = L.marker(
+                [42.2479853457494, -71.1283949888355],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_8cc72e91cc2874e4caf4e6d99162165a.bindTooltip(
+                `<div>
+                     Fixed pinch point <36” sidewalk width
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a99e727e5228a23d86c216fdc4f02a5d = L.marker(
+                [42.247679914752, -71.1286328851806],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_a99e727e5228a23d86c216fdc4f02a5d.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9424010cc1df267159d22475090c944e = L.marker(
+                [42.2583176667975, -71.1279469594774],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_9424010cc1df267159d22475090c944e.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_08bc5a214edbe62eeea9ff9f44d2f7f9 = L.marker(
+                [42.2467119483125, -71.1363385609243],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_08bc5a214edbe62eeea9ff9f44d2f7f9.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_60491bf297ee7f410f7d6dbc7be2b2b9 = L.marker(
+                [42.2611278603332, -71.1269309235686],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_60491bf297ee7f410f7d6dbc7be2b2b9.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_00d31ab597748160a2d87454a94652b1 = L.marker(
+                [42.2702855822464, -71.1297511376907],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_00d31ab597748160a2d87454a94652b1.bindTooltip(
+                `<div>
+                     Fixed pinch point <36” sidewalk width
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3903eb8c7ce02a20e535b783e4e102a6 = L.marker(
+                [42.270087133166, -71.1298727192745],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_3903eb8c7ce02a20e535b783e4e102a6.bindTooltip(
+                `<div>
+                     Fixed pinch point <36” sidewalk width
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_10ea2d12c4aea309e4a39c71be8f748f = L.marker(
+                [42.270087133166, -71.1298727192745],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_10ea2d12c4aea309e4a39c71be8f748f.bindTooltip(
+                `<div>
+                     Fixed pinch point <36” sidewalk width
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b52801bf37a446bee60c632ee5d01551 = L.marker(
+                [42.2733651083291, -71.1309641696498],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_b52801bf37a446bee60c632ee5d01551.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4fe0367983f4bb484b209acc817328e7 = L.marker(
+                [42.2739977168565, -71.1284749011665],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_4fe0367983f4bb484b209acc817328e7.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3fd8d868de0643ab946d1df8847158e2 = L.marker(
+                [42.2755716141044, -71.1277880582835],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_3fd8d868de0643ab946d1df8847158e2.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_389e337e0b4a95cf6e7ad75ea5fa1d97 = L.marker(
+                [42.3001885607153, -71.0709583534859],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_389e337e0b4a95cf6e7ad75ea5fa1d97.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f4c423b6f1b4c9c95838a094e3751711 = L.marker(
+                [42.2744795732463, -71.1281620251396],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_f4c423b6f1b4c9c95838a094e3751711.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2e0acbee96704cd4cdd8e1e6fe8d0b50 = L.marker(
+                [42.2736292374409, -71.1289933180187],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_2e0acbee96704cd4cdd8e1e6fe8d0b50.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5098281d5e1644ebf29685f24dcbb904 = L.marker(
+                [42.3009940703775, -71.0709187279003],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_5098281d5e1644ebf29685f24dcbb904.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dd84e600ade4f9b8c34405383ecb6b42 = L.marker(
+                [42.3008741360276, -71.0710374869776],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_dd84e600ade4f9b8c34405383ecb6b42.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_99e0b8916b76392718adc39d6da7b6bb = L.marker(
+                [42.3008341722559, -71.0712481095723],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_99e0b8916b76392718adc39d6da7b6bb.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5271f82cbfcf0f279916891cd2309342 = L.marker(
+                [42.300893364128, -71.0714556850817],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_5271f82cbfcf0f279916891cd2309342.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_892d4c4facb53fbaef13680f32f72e3b = L.marker(
+                [42.3041331042442, -71.077247327636],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_892d4c4facb53fbaef13680f32f72e3b.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2148c2db1f4897ea8cf30ae85bfa9efd = L.marker(
+                [42.3038823733526, -71.0772267283682],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_2148c2db1f4897ea8cf30ae85bfa9efd.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_52a7791804c0bef30639826a2ed74389 = L.marker(
+                [42.3032436681515, -71.0773465106265],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_52a7791804c0bef30639826a2ed74389.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_81a17b93bf9b8113ee61321c261972c5 = L.marker(
+                [42.302445865695, -71.0748294464717],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_81a17b93bf9b8113ee61321c261972c5.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e79bf3c13f83e174eafb903d50442dbf = L.marker(
+                [42.3023140241221, -71.0749924134407],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_e79bf3c13f83e174eafb903d50442dbf.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e2dd8f3dde1da1b96b9c4f0eb3ecfa30 = L.marker(
+                [42.2682068327219, -71.1293796340151],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_e2dd8f3dde1da1b96b9c4f0eb3ecfa30.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4b811ca458add77cca82d5c0748bc331 = L.marker(
+                [42.3018232716406, -71.0743748342593],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_4b811ca458add77cca82d5c0748bc331.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5fe631ec829794f8045e6bc3515f48f2 = L.marker(
+                [42.3014534573799, -71.0736473929152],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_5fe631ec829794f8045e6bc3515f48f2.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0c991ee1292418d5b2f2474569f35365 = L.marker(
+                [42.2678720819977, -71.1283719470485],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_0c991ee1292418d5b2f2474569f35365.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e0ff963689e1f5133f549cfad4c0d557 = L.marker(
+                [42.2676229145244, -71.1296994558158],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_e0ff963689e1f5133f549cfad4c0d557.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bc126d284c6fada85c28388f66cbfb2c = L.marker(
+                [42.2644174872671, -71.1255138204281],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_bc126d284c6fada85c28388f66cbfb2c.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_07a1d2c5460bcf770e6d9fc04616f135 = L.marker(
+                [42.264834543119, -71.1253492320001],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_07a1d2c5460bcf770e6d9fc04616f135.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e9c857b551d08f7627cb3311537d297f = L.marker(
+                [42.2927676132964, -71.0748095721444],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_e9c857b551d08f7627cb3311537d297f.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fd3ff54d81cda0632f234eab1bcb464c = L.marker(
+                [42.2928470314164, -71.0748559728238],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_fd3ff54d81cda0632f234eab1bcb464c.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4f148ec38db3ebc2b587b4835413cc42 = L.marker(
+                [42.2919178558697, -71.0745812707048],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_4f148ec38db3ebc2b587b4835413cc42.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a62d591bd59d73703e033b83d9fb379c = L.marker(
+                [42.2918402599881, -71.0745814350965],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_a62d591bd59d73703e033b83d9fb379c.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e6feadfa2594dac87d6515f3adb9c06e = L.marker(
+                [42.2669595548885, -71.1269078925613],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_e6feadfa2594dac87d6515f3adb9c06e.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0e55eed299a68509d2bdc726e7111b06 = L.marker(
+                [42.2678209485745, -71.1269810342901],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_0e55eed299a68509d2bdc726e7111b06.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_29db618176458eaa210519d99e8a2ba6 = L.marker(
+                [42.2678897712807, -71.126899480737],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_29db618176458eaa210519d99e8a2ba6.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_565e2b879b48f8ef4952e6c86bfd9f45 = L.marker(
+                [42.3099755752434, -71.0824552044945],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_565e2b879b48f8ef4952e6c86bfd9f45.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fab0080ca9c003887a5ec223a75f894f = L.marker(
+                [42.3098849783312, -71.0825272862112],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_fab0080ca9c003887a5ec223a75f894f.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_66fa47df27ca9929b843aae384a4a91a = L.marker(
+                [42.2678473655207, -71.1241511318377],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_66fa47df27ca9929b843aae384a4a91a.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9917221f486e18a61c5943c97e45b2a2 = L.marker(
+                [42.3220872964118, -71.0808437948597],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_9917221f486e18a61c5943c97e45b2a2.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_794aded18d9572ade2e57c1dc938b66d = L.marker(
+                [42.3220341194409, -71.080626217508],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_794aded18d9572ade2e57c1dc938b66d.bindTooltip(
+                `<div>
+                     Fixed pinch point <36” sidewalk width
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f1acd2d1567ec0610eaf72aab2c2d4c8 = L.marker(
+                [42.3229366792339, -71.0795626957549],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_f1acd2d1567ec0610eaf72aab2c2d4c8.bindTooltip(
+                `<div>
+                     Fixed pinch point <36” sidewalk width
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cbd3c833cbef9803ac060b5a844215c6 = L.marker(
+                [42.3229455659596, -71.0794460405321],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_cbd3c833cbef9803ac060b5a844215c6.bindTooltip(
+                `<div>
+                     Fixed pinch point <36” sidewalk width
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e1ff9d8b14da8ad9fc1d5f1699d2188e = L.marker(
+                [42.3232908760467, -71.0791607023602],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_e1ff9d8b14da8ad9fc1d5f1699d2188e.bindTooltip(
+                `<div>
+                     Fixed pinch point <36” sidewalk width
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f2ed7ae7a257f3258c3b1b87c38e786e = L.marker(
+                [42.2750815106795, -71.124890700438],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_f2ed7ae7a257f3258c3b1b87c38e786e.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_837a4598da3c8fd4601251c40cc06ad6 = L.marker(
+                [42.3186136013362, -71.0764984111668],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_837a4598da3c8fd4601251c40cc06ad6.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7162c8629ff78d3a4b9f5dfea8d2e81f = L.marker(
+                [42.3187551861505, -71.0764356431829],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_7162c8629ff78d3a4b9f5dfea8d2e81f.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8cdbc37934d36662ccde5647c6d388dd = L.marker(
+                [42.319413198188, -71.0768860881108],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_8cdbc37934d36662ccde5647c6d388dd.bindTooltip(
+                `<div>
+                     Fixed pinch point <36” sidewalk width
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ef56895923e4da37f405ce82b6e74917 = L.marker(
+                [42.3194370568593, -71.0769592505008],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_ef56895923e4da37f405ce82b6e74917.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e851e7fe8f69031ada4d267c82fb81c7 = L.marker(
+                [42.3212337694843, -71.0753432944924],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_e851e7fe8f69031ada4d267c82fb81c7.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_73b3dbe22e3cff139a218a6ff0df38c2 = L.marker(
+                [42.2665956678034, -71.1297769777298],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_73b3dbe22e3cff139a218a6ff0df38c2.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bce581dfeede4f8b629110863166e6f1 = L.marker(
+                [42.2668463437153, -71.130047207137],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_bce581dfeede4f8b629110863166e6f1.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8b6b549d4042950952a4ad7961f97e30 = L.marker(
+                [42.2682819529101, -71.1313033115173],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_8b6b549d4042950952a4ad7961f97e30.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c8c0c85b897b8382fd68810d95132608 = L.marker(
+                [42.2683954992009, -71.131376190938],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_c8c0c85b897b8382fd68810d95132608.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_86acca17f11ec0a7f184fc82170cb05a = L.marker(
+                [42.2684648444416, -71.1314362307383],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_86acca17f11ec0a7f184fc82170cb05a.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b677f256826cac85fbde5b280c541f42 = L.marker(
+                [42.2687789847324, -71.1316168945184],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_b677f256826cac85fbde5b280c541f42.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b74ced695eb50a91cdedb3e21261121a = L.marker(
+                [42.2691615691927, -71.1318074739025],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_b74ced695eb50a91cdedb3e21261121a.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d2870f62441b4a95ae5e8b033b1aee44 = L.marker(
+                [42.2698606354337, -71.1320619459613],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_d2870f62441b4a95ae5e8b033b1aee44.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7be2b557d88c810e769313e572cc39c7 = L.marker(
+                [42.2700925727124, -71.1321180044282],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_7be2b557d88c810e769313e572cc39c7.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aa52ac8cf9d60094eef7b1b9c3b4a623 = L.marker(
+                [42.2707301131516, -71.1319937054407],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_aa52ac8cf9d60094eef7b1b9c3b4a623.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_584ce5ad62dfde91894befa71a83a650 = L.marker(
+                [42.2705176788269, -71.1322096101294],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_584ce5ad62dfde91894befa71a83a650.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_70bf604f1d9350d8ea6003ed0ba6dbcf = L.marker(
+                [42.2699845873578, -71.1322538476655],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_70bf604f1d9350d8ea6003ed0ba6dbcf.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_78a095904f5e103984ca54b4c607d6f2 = L.marker(
+                [42.2697316963775, -71.1322090774284],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_78a095904f5e103984ca54b4c607d6f2.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_741ae0be3fcb8f6b9af94d06a637e0a6 = L.marker(
+                [42.2694384923067, -71.1321184661623],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_741ae0be3fcb8f6b9af94d06a637e0a6.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_136ea81cd15f57821c62ffc81dba1c71 = L.marker(
+                [42.2692918249472, -71.1320748421755],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_136ea81cd15f57821c62ffc81dba1c71.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8e62703e31871ce6e21284cc5c651dfb = L.marker(
+                [42.269071674032, -71.1319711514389],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_8e62703e31871ce6e21284cc5c651dfb.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c22158088f28f1e1a10c68b11d0c9b9d = L.marker(
+                [42.2650394645182, -71.1281693787485],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_c22158088f28f1e1a10c68b11d0c9b9d.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_88188b76089be0c50a6e9221d8fcdd09 = L.marker(
+                [42.2643192122072, -71.1272125822411],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_88188b76089be0c50a6e9221d8fcdd09.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_87d2998fb730fb0bd4f3c9c6a087f426 = L.marker(
+                [42.3265022396176, -71.0759462832369],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_87d2998fb730fb0bd4f3c9c6a087f426.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b7709c732f609bc32d0b0059e4b4707c = L.marker(
+                [42.3266514947733, -71.0771602934613],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_b7709c732f609bc32d0b0059e4b4707c.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_410a5b61e300afad6776001ba0787b95 = L.marker(
+                [42.3250626132418, -71.0760853873587],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_410a5b61e300afad6776001ba0787b95.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_657d415e59846295fdf7937d6e6aee35 = L.marker(
+                [42.3251669463048, -71.0754372753391],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_657d415e59846295fdf7937d6e6aee35.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8f8c0bf5323d41366eedf2f6552f2fbb = L.marker(
+                [42.285961321171, -71.1217038703738],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_8f8c0bf5323d41366eedf2f6552f2fbb.bindTooltip(
+                `<div>
+                     Fixed pinch point <36” sidewalk width
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1354715f40a8a740ce5615f13ea6ace6 = L.marker(
+                [42.2860767861207, -71.1217538373648],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_1354715f40a8a740ce5615f13ea6ace6.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_72ab0fb8c1a4b1b592312dfd3edcec39 = L.marker(
+                [42.3241060904731, -71.075961606699],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_72ab0fb8c1a4b1b592312dfd3edcec39.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b119b6c0cda3ca9563753b8f0a76dd7c = L.marker(
+                [42.3254470263683, -71.0757299976626],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_b119b6c0cda3ca9563753b8f0a76dd7c.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5025b232d54842de16d096d5ac7e16b5 = L.marker(
+                [42.3259354129505, -71.0764446865228],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_5025b232d54842de16d096d5ac7e16b5.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0079707a2e652a3ab20a7ed5a66a4d18 = L.marker(
+                [42.3276311576564, -71.0775842821058],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_0079707a2e652a3ab20a7ed5a66a4d18.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_66e6b74b54ff0bac306895eceea530be = L.marker(
+                [42.2852911645222, -71.1204165459441],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_66e6b74b54ff0bac306895eceea530be.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b9924c215f0816d93407cb09629e156b = L.marker(
+                [42.2836357450142, -71.1212622513936],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_b9924c215f0816d93407cb09629e156b.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2af79d564ba3c69134ba213f9d8b979b = L.marker(
+                [42.2816237525371, -71.120549618777],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_2af79d564ba3c69134ba213f9d8b979b.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dd256a45992e519960362d880e3e7486 = L.marker(
+                [42.3273856992751, -71.079365697908],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_dd256a45992e519960362d880e3e7486.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6d1b9e80b1f7c3dee9cf43b0d7bbbde1 = L.marker(
+                [42.3281319510699, -71.0792838146733],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_6d1b9e80b1f7c3dee9cf43b0d7bbbde1.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d7cea704388f21d69c1d883d3310f861 = L.marker(
+                [42.3289445678338, -71.0794742359539],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_d7cea704388f21d69c1d883d3310f861.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_19b0d36735223aca8597ae13d8b5c64b = L.marker(
+                [42.2845698177739, -71.1224506982599],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_19b0d36735223aca8597ae13d8b5c64b.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a6371e1cfd207d7b78d4fbebfd30755b = L.marker(
+                [42.2911778078038, -71.1145470841333],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_a6371e1cfd207d7b78d4fbebfd30755b.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6e12e6ddb216abaa978249dbbf2767ec = L.marker(
+                [42.2885253908395, -71.1123225931818],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_6e12e6ddb216abaa978249dbbf2767ec.bindTooltip(
+                `<div>
+                     Fixed pinch point <36” sidewalk width
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_63d5dc603c4cf1967e5e887937edc8ba = L.marker(
+                [42.2881872285961, -71.1135893991921],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_63d5dc603c4cf1967e5e887937edc8ba.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cff4ef6e71c87fd61a4a192d3cf66e3b = L.marker(
+                [42.2881419669789, -71.113770734912],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_cff4ef6e71c87fd61a4a192d3cf66e3b.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fc14b82f10a06e99e96d7c03ee88d923 = L.marker(
+                [42.2880898299203, -71.1147552956499],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_fc14b82f10a06e99e96d7c03ee88d923.bindTooltip(
+                `<div>
+                     Fixed pinch point <36” sidewalk width
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b87212d2ff4565a44e080e412148fef0 = L.marker(
+                [42.2882889526481, -71.1149219313385],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_b87212d2ff4565a44e080e412148fef0.bindTooltip(
+                `<div>
+                     Fixed pinch point <36” sidewalk width
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f935a355d28331f00a49d0681cd84834 = L.marker(
+                [42.2904881271675, -71.1170812872454],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_f935a355d28331f00a49d0681cd84834.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_986f9f57c55f2d0661c0ef4401019c51 = L.marker(
+                [42.2923621198894, -71.1153646498566],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_986f9f57c55f2d0661c0ef4401019c51.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_59e7ac7f1777276ca320236d4a6e8dc4 = L.marker(
+                [42.2921419226449, -71.1163082078916],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_59e7ac7f1777276ca320236d4a6e8dc4.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d28ffd1430566564f133ad75c8c0dc68 = L.marker(
+                [42.2953038283661, -71.114449668129],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_d28ffd1430566564f133ad75c8c0dc68.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a6500ed8b68cc8c80f9f20bfbb4b8797 = L.marker(
+                [42.2926216687172, -71.11684290581],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_a6500ed8b68cc8c80f9f20bfbb4b8797.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6d8662660e8fbff57e4a43857f4d33c6 = L.marker(
+                [42.2928068818068, -71.1168106311385],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_6d8662660e8fbff57e4a43857f4d33c6.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_178d10d7f8a83f591dc12829a0472510 = L.marker(
+                [42.3783609938101, -71.0555592990365],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_178d10d7f8a83f591dc12829a0472510.bindTooltip(
+                `<div>
+                     Fixed pinch point <36” sidewalk width
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ebb95a38eea9d069db8354c4e9549c93 = L.marker(
+                [42.378476510897, -71.0555943998079],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_ebb95a38eea9d069db8354c4e9549c93.bindTooltip(
+                `<div>
+                     Fixed pinch point <36” sidewalk width
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_08ab87455e95cd13d051837f41c3359d = L.marker(
+                [42.2959805477235, -71.115139667692],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_08ab87455e95cd13d051837f41c3359d.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ce183a3c1e5497014cb06c4e6815880e = L.marker(
+                [42.2960631611838, -71.1150737591979],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_ce183a3c1e5497014cb06c4e6815880e.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aa8d8adc87f7aa68ab9df71ec2d88e65 = L.marker(
+                [42.2961270918384, -71.1150349537742],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_aa8d8adc87f7aa68ab9df71ec2d88e65.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2930c482435e58e18a135157eaef17bb = L.marker(
+                [42.3768213734543, -71.0563638517645],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_2930c482435e58e18a135157eaef17bb.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5589f641c7ed51ff1c16f86e0450f898 = L.marker(
+                [42.3767294633035, -71.0563313614974],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_5589f641c7ed51ff1c16f86e0450f898.bindTooltip(
+                `<div>
+                     Fixed pinch point <36” sidewalk width
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_596a4213e4f5bad8950844eba8d26a42 = L.marker(
+                [42.2800541803337, -71.1143147312918],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_596a4213e4f5bad8950844eba8d26a42.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2ebe4d0fd165a4fbf942dc5cdb6c169c = L.marker(
+                [42.2800878565809, -71.1139227756721],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_2ebe4d0fd165a4fbf942dc5cdb6c169c.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b528ab087ac356a7fceb0597b660d6d7 = L.marker(
+                [42.2765583558474, -71.1194940345378],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_b528ab087ac356a7fceb0597b660d6d7.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a3ff7ef658de3d456fd1d5e60c444eca = L.marker(
+                [42.2766629029108, -71.1194567751147],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_a3ff7ef658de3d456fd1d5e60c444eca.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2e14f66a3482dd7703056608103c6455 = L.marker(
+                [42.278734199365, -71.1174255845443],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_2e14f66a3482dd7703056608103c6455.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_189b1a1659fdf1707494420e83eba288 = L.marker(
+                [42.2802363744051, -71.1165063331242],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_189b1a1659fdf1707494420e83eba288.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_739e6d54f4e0ab7093fd4b108be6217b = L.marker(
+                [42.2800103484801, -71.1162621638434],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_739e6d54f4e0ab7093fd4b108be6217b.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3fb1a6046fab115676cec9c04694ae00 = L.marker(
+                [42.3053387632603, -71.0809710232534],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_3fb1a6046fab115676cec9c04694ae00.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3684620d0d53187c48f017ab89b5ccb7 = L.marker(
+                [42.30470553331, -71.0813613080066],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_3684620d0d53187c48f017ab89b5ccb7.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bbf6fd44f4ceb047e4e75ec132a2d01f = L.marker(
+                [42.3033564206209, -71.0841048140883],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_bbf6fd44f4ceb047e4e75ec132a2d01f.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4aef5bca94f3e22587c56970b62e70bd = L.marker(
+                [42.2834212759959, -71.118804007127],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_4aef5bca94f3e22587c56970b62e70bd.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_283809c49e3f239c1d256ae96382305c = L.marker(
+                [42.3228345807621, -71.0816928079061],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_283809c49e3f239c1d256ae96382305c.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_01f03cd58eb0fb1699718c0399888828 = L.marker(
+                [42.3248298694782, -71.0828839119891],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_01f03cd58eb0fb1699718c0399888828.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f94bdd6e974bb3c0602f7159f2708bc1 = L.marker(
+                [42.326783771522, -71.0834403554255],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_f94bdd6e974bb3c0602f7159f2708bc1.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d1bb79f5b07d0c6d4c3b8561d9021c28 = L.marker(
+                [42.2704050855991, -71.1177487840105],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_d1bb79f5b07d0c6d4c3b8561d9021c28.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_50d482cbfc89e37ac6ff811b7fcdf309 = L.marker(
+                [42.2698985907384, -71.1174146008433],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_50d482cbfc89e37ac6ff811b7fcdf309.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5e26cc40961547ef1914747f93145b6a = L.marker(
+                [42.2689440774855, -71.1167977861282],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_5e26cc40961547ef1914747f93145b6a.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b1e1f98c88270968e07003f87c4af50e = L.marker(
+                [42.2687734805917, -71.1167235637262],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_b1e1f98c88270968e07003f87c4af50e.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_46d038aa52aac509b44de03ececf31ad = L.marker(
+                [42.3278906394628, -71.0829194879692],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_46d038aa52aac509b44de03ececf31ad.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_30dd749d31ed0544d4a2701b2c4b7480 = L.marker(
+                [42.3265125417905, -71.0829132842039],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_30dd749d31ed0544d4a2701b2c4b7480.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_49fe1b175ef0c8f71435195703b765d8 = L.marker(
+                [42.3264973163313, -71.0824270998025],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_49fe1b175ef0c8f71435195703b765d8.bindTooltip(
+                `<div>
+                     Fixed pinch point <36” sidewalk width
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6f8b54f124473bb63a0232b81024b349 = L.marker(
+                [42.3251837839929, -71.0792775138899],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_6f8b54f124473bb63a0232b81024b349.bindTooltip(
+                `<div>
+                     Fixed pinch point <36” sidewalk width
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1bbfccfaebd09083697c5c5d1ec8676d = L.marker(
+                [42.2646919369132, -71.1118876280229],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_1bbfccfaebd09083697c5c5d1ec8676d.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_adb0f6cbf90b71da34cff092781c69d0 = L.marker(
+                [42.2640593287251, -71.111459697571],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_adb0f6cbf90b71da34cff092781c69d0.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cb88665c9dcf8e09f204a441d069f057 = L.marker(
+                [42.2639737096074, -71.1114056908561],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_cb88665c9dcf8e09f204a441d069f057.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_803ffe11d5f856b9d3256329b451ea0c = L.marker(
+                [42.263796007801, -71.1112896437928],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_803ffe11d5f856b9d3256329b451ea0c.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5ffd54dcda5eaba0360ae456a6b03951 = L.marker(
+                [42.2650878094084, -71.1113546674463],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_5ffd54dcda5eaba0360ae456a6b03951.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bd996d190a9e37532c81ed71b48bc144 = L.marker(
+                [42.2652089526774, -71.1114101761443],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_bd996d190a9e37532c81ed71b48bc144.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_251e517d618a581ae6db5604a7da552e = L.marker(
+                [42.2653402270763, -71.1115163049086],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_251e517d618a581ae6db5604a7da552e.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_27e96bdad4700c537c01f5fbf323a925 = L.marker(
+                [42.2659523139191, -71.1118852735385],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_27e96bdad4700c537c01f5fbf323a925.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_73f313fa5c649dbc323eeec524bfb268 = L.marker(
+                [42.2660476095482, -71.1119489982282],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_73f313fa5c649dbc323eeec524bfb268.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6f609052363a8718713e516fd343d0a3 = L.marker(
+                [42.2647910383949, -71.115573516245],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_6f609052363a8718713e516fd343d0a3.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_095b3ef30893bae9f910b75a4d740124 = L.marker(
+                [42.2658461622538, -71.1163291332479],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_095b3ef30893bae9f910b75a4d740124.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3be194d1702fe710471fefa32a2e2627 = L.marker(
+                [42.2662217092229, -71.1155269502756],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_3be194d1702fe710471fefa32a2e2627.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_64aad29b73f4c8e21455bb6765167876 = L.marker(
+                [42.2664119026511, -71.1152307757264],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_64aad29b73f4c8e21455bb6765167876.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bba9540cf93786230b6e61969354750a = L.marker(
+                [42.2664593005131, -71.1145292417952],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_bba9540cf93786230b6e61969354750a.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_784afbdfa4053da31fafdfbb3398bac1 = L.marker(
+                [42.266642998385, -71.1139809730278],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_784afbdfa4053da31fafdfbb3398bac1.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d51d60503f50d646ec1e4230d591a56c = L.marker(
+                [42.2667437932998, -71.1135300618743],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_d51d60503f50d646ec1e4230d591a56c.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6a68f0c9bdfa668fd039a931306fcd7e = L.marker(
+                [42.3759553369233, -71.0544915695747],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_6a68f0c9bdfa668fd039a931306fcd7e.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a60fb10a3df12b01304d8e55d64c7166 = L.marker(
+                [42.3756513830272, -71.0548288070138],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_a60fb10a3df12b01304d8e55d64c7166.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fadf1cf7ad94834a436ab8671a111963 = L.marker(
+                [42.3756963487834, -71.0544513888303],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_fadf1cf7ad94834a436ab8671a111963.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1537d15320bf354554e0f4616e558e51 = L.marker(
+                [42.3753841779457, -71.0541147640422],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_1537d15320bf354554e0f4616e558e51.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1411fe714a739291117d5f506357ef08 = L.marker(
+                [42.3748725043665, -71.054412065977],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_1411fe714a739291117d5f506357ef08.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_28aa8234e02f3cb0e262f02c6896a977 = L.marker(
+                [42.3740032554853, -71.0589153788869],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_28aa8234e02f3cb0e262f02c6896a977.bindTooltip(
+                `<div>
+                     Fixed pinch point <36” sidewalk width
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7323d9fd1fa0bb2f2c2c8fbfd84d04c9 = L.marker(
+                [42.3739688895167, -71.0599583938986],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_7323d9fd1fa0bb2f2c2c8fbfd84d04c9.bindTooltip(
+                `<div>
+                     Fixed pinch point <36” sidewalk width
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_381f679e4074d0c5e1d6f8d25a18f2e2 = L.marker(
+                [42.3739277995161, -71.0600298979986],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_381f679e4074d0c5e1d6f8d25a18f2e2.bindTooltip(
+                `<div>
+                     Fixed pinch point <36” sidewalk width
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_41d7e62e9d04ac470232bb4fdd5d5775 = L.marker(
+                [42.2671414737117, -71.1114695619711],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_41d7e62e9d04ac470232bb4fdd5d5775.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_44b582090f409d9c674a466e2db39c2a = L.marker(
+                [42.3738665301316, -71.0598573576837],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_44b582090f409d9c674a466e2db39c2a.bindTooltip(
+                `<div>
+                     Fixed pinch point <36” sidewalk width
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2287957ecbf5fa6c63fad3db354c13a8 = L.marker(
+                [42.2672263094197, -71.1118934131733],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_2287957ecbf5fa6c63fad3db354c13a8.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1fea10ec4a1a3c3087c5a41be20c7e8c = L.marker(
+                [42.3738226859482, -71.0598126368539],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_1fea10ec4a1a3c3087c5a41be20c7e8c.bindTooltip(
+                `<div>
+                     Fixed pinch point <36” sidewalk width
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cda642d22dad02d76677b371a28fc9b7 = L.marker(
+                [42.3747552764415, -71.0568851378357],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_cda642d22dad02d76677b371a28fc9b7.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1e6933f908f618630a4e9f9eda57860f = L.marker(
+                [42.3795740732106, -71.0551135936201],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_1e6933f908f618630a4e9f9eda57860f.bindTooltip(
+                `<div>
+                     Fixed pinch point <36” sidewalk width
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a0e8a55ca36246a69a2c4ff174ee34e9 = L.marker(
+                [42.2657249769983, -71.1082555776325],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_a0e8a55ca36246a69a2c4ff174ee34e9.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_39c3af5160ae937076d317991d694f99 = L.marker(
+                [42.2640617033944, -71.1047427363751],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_39c3af5160ae937076d317991d694f99.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_761bae3687ebe8f19d0996e3034ee12d = L.marker(
+                [42.2641019185238, -71.1048599826894],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_761bae3687ebe8f19d0996e3034ee12d.bindTooltip(
+                `<div>
+                     Trip hazards not due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0eeffd4d5c8d7c6daf6db0e2d65eefb0 = L.marker(
+                [42.3801360599618, -71.0576093434481],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_0eeffd4d5c8d7c6daf6db0e2d65eefb0.bindTooltip(
+                `<div>
+                     Fixed pinch point <36” sidewalk width
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2a51993da595a58ead6ba2ea6dc04ea4 = L.marker(
+                [42.3801214506779, -71.0575171942662],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_2a51993da595a58ead6ba2ea6dc04ea4.bindTooltip(
+                `<div>
+                     Fixed pinch point <36” sidewalk width
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bc912664d847dba1f0b1a99eb4fde630 = L.marker(
+                [42.2676570501182, -71.1151756182696],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_bc912664d847dba1f0b1a99eb4fde630.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7f4c9d9215ca98b442cef2b291de3797 = L.marker(
+                [42.267423360198, -71.1160520739496],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_7f4c9d9215ca98b442cef2b291de3797.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0200ca3635b99d5839a9205f0de0ed3d = L.marker(
+                [42.2678667898366, -71.1146150111419],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_0200ca3635b99d5839a9205f0de0ed3d.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dc76a09b1a0e565bde24dbd1ea828d90 = L.marker(
+                [42.2680814985926, -71.114015634523],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_dc76a09b1a0e565bde24dbd1ea828d90.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_eb13d78ed563edece1e5ffe54fcc05fe = L.marker(
+                [42.2682291665686, -71.1130620656624],
+                {}
+            ).addTo(map_4ba36c7080958e433afe0f66635a1f2b);
+        
+    
+            marker_eb13d78ed563edece1e5ffe54fcc05fe.bindTooltip(
+                `<div>
+                     Trip hazards due to tree roots
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>

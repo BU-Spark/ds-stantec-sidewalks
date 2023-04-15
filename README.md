@@ -1,4 +1,5 @@
-
+ ```markdown
+ 
 #Sidewalks Project
 The Sidewalks project aims to develop an accessibility score for the sidewalk network in the City of Boston to promote equity, safety, and walkability for all members of the community. By identifying inaccessible sidewalks and potential inequities in accessibility, this project aims to create a more proactive approach to sidewalk maintenance and repair.
 

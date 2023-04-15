@@ -9,7 +9,7 @@ Identify inaccessible corridors in different districts and neighborhoods
 Assess routes to access essential services
 Develop a proactive sidewalk maintenance strategy based on accessibility scores and prioritization criteria
 
-#P rogress
+# Progress
 
 We have made significant progress in our project to identify and address inequities in sidewalk accessibility throughout Boston. 
 We began by analyzing four key datasets related to the city's infrastructure - Ramps, Roadway Centerline, Sidewalk Hazards, and Sidewalks - to gain a better understanding of the accessibility and safety for pedestrians and individuals with disabilities. By examining these datasets. we were able to gather insights into the city's accessibility infrastructure, including the locations of ramps, the centerlines of roadways, potential hazards on sidewalks, and the extent and conditions of sidewalks throughout the city.

@@ -10,14 +10,14 @@ Assess routes to access essential services
 Develop a proactive sidewalk maintenance strategy based on accessibility scores and prioritization criteria
 
 #Progress
-'
+
 We have made significant progress in our project to identify and address inequities in sidewalk accessibility throughout Boston. 
 We began by analyzing four key datasets related to the city's infrastructure - Ramps, Roadway Centerline, Sidewalk Hazards, and Sidewalks - to gain a better understanding of the accessibility and safety for pedestrians and individuals with disabilities. By examining these datasets. we were able to gather insights into the city's accessibility infrastructure, including the locations of ramps, the centerlines of roadways, potential hazards on sidewalks, and the extent and conditions of sidewalks throughout the city.
 
 Additionally, we have analyzed information from Boston's public schools to identify the top 5 schools with the most sidewalks within a 15-minute walking distance. 
 
 Furthermore, we expanded our analysis by examining four additional datasets - Public Works Active Work Zones Data, Climate Ready Social Vulnerability Data, 311 Requests, and Census Demographic Data - to gain a comprehensive view of Boston's infrastructure and demographic landscape. This analysis has helped us identify areas of improvement and develop strategies for addressing key challenges facing the city.
-'
+
 
 #File Structure
 ├── README.md

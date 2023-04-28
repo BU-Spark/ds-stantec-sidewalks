@@ -1,10 +1,14 @@
+
+
+# Sidewalks 
+
 **Goal** 
 
-Create Accessibility Scores for sidewalks that can be used to determine areas in need of improvement. Also find best routes for people to walk to the public facilities
+The goal of this project is to create accessibility scores for sidewalks in Boston and identify areas that need improvement. We also aim to find the best routes for people to walk to public facilities.
 
 **Background**
 
- The current system requires residents to call to report sidewalk issues/hazards. We are trying to see through the data how the current system is helping the various regions of Boston and where the help may be lacking. Therefore, with the introduction of accessibility scores we will be able to determine the areas that are not receiving proper treatment of their sidewalks.
+Currently, residents need to call to report sidewalk issues or hazards, which may not be effective in identifying areas that need improvement. By introducing accessibility scores, we can determine the areas that are not receiving proper treatment of their sidewalks.
 
 **Data Analysis**
 
@@ -16,16 +20,69 @@ We have analyzed all of the initial datasets. As for the new ones we have decide
 
 **DataSets**: 
 
-Ramps_new.json, Sidewalks.json, Hospitals.csv, Schools.csv and so on
+The following datasets were used in this project:
+
+- Ramps_new.json
+- Sidewalks.json
+- Hospitals.csv
+- Schools.csv
+- and so on
 
 **Maps**: 
 
-We show most of the result we get in map, it can be found in folder data.
+We show most of the result we get in map, it can be found in folder data. Map  will show you the sidewalks on a map and allow you to view each sidewalks ID by hovering over it and also see each sidewalks score by clicking on it.
 
-**Code**: 
+## **HOW TO GET SIDEWALK SCORES**
 
-The code which can generate the maps we draw and all the visualization we provide is under folder named deliverables.
+#### Source
 
-**How to run**: 
+You will need to download the `Ramps_new.json` and the `Sidewalks.json` files.
 
-For all the dependency to run the code to generate all the result we get, you need to get access to the google drive for data like the shape of the sidewalks. Here is the link https://drive.google.com/drive/u/0/folders/1LHf63zWmj43Hu5RmjiEoFa04kBcfQkZM
+#### Code
+
+Download the `scores.ipynb` file and keep `Ramps_new.json` and `Sidewalks.json` under the same directory as `scores.ipynb`. In this way, when reading the necessary source file, it can succeed. If you want to make any changes to the directory, you can modify the code below to adjust the structure to meet your needs:
+
+```python
+# Load sidewalks file as geopandas dataframe
+sidewalks = gpd.read_file('Sidewalks_without_scores.json')
+ramps_gdf = gpd.read_file('Ramps New.json')
+sidewalks_gdf = gpd.read_file('Sidewalks.json')
+```
+
+
+
+#### Installation Instructions
+
+##### Requirements
+
+Add dependencies to run all the code we build, using following command.
+
+```shell
+pip install -r requirement.txt
+```
+
+The required Python packages are:
+
+- pandas
+- json
+- folium
+- pyproj
+- geopandas
+- shapely
+- scipy
+
+##### Troubleshooting
+
+When installing geopandas you may need to install **gdal** as well, however when in install it you may face the problem of below.
+
+```error
+lacking mircosoft visual c++2014
+```
+
+When installing gdal, you may encounter an error related to missing Microsoft Visual C++ 2014. If this happens, you can download the appropriate .whl file for your machine from https://www.lfd.uci.edu/~gohlke/pythonlibs/ and install it by running the .whl file instead.
+
+#### Add Users
+
+To add yourself to the repository, please open a Pull Request modifying the `COLLABORATORS` file and adding your GitHub username on a new line.
+
+All Pull Requests must follow the Pull Request Template, with a title formatted like so: `[Project Name]: <Descriptive Title>`

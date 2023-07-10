@@ -1,0 +1,11 @@
+Billy Nowosielski
+Did a preliminary Analysis of the Sidewalk_Hazards_1.csv dataset
+Determined that it woud be usefull in helping answer question 2. 
+When you overlay the meatmap that I made with the map of the boston
+neighborhoods
+(https://www.bostonplans.org/getattachment/64c37bd1-21ac-4ec1-9e3b-5fdbcc135823/)
+you can begin to see the areas that are reciveing more aid when it comes to
+actually getting issues repaired. With the neighborhood map you will then be
+able to tell which neighborhoods are not recieving nearly as many repairs. 
+This can later be paired with other datasets to further determine the causes
+for certain neighborhoods receiving more help than others.

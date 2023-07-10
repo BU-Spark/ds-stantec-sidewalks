@@ -1,0 +1,28 @@
+﻿Billy Nowosielski
+
+
+On the Weekly Scrum Report document, answer all of the questions:
+
+
+What is the project focus/overall goal?
+Analyzing the Boston sidewalk data and coming up with a score and solutions as to where they should be improved for issues such as accessibility for disabilities, as well as accessibility to common public destinations such as schools, retails, and hospitals.
+
+
+Why is this project important?
+This project is important since it could have a big impact on how money is distributed for improving the sidewalks throughout the city.
+
+
+What type of data will you collect or be analyzing?
+We will have access to four data sets for this project which are the following
+Public Works Active Work Zones Data,
+Climate Ready Social Vulnerability Data,
+311 Requests,
+Census Demographic Data,
+
+
+What are potential limitations of the project?
+I would think that one limitation might be lack of the full picture. We have a lot of good data to use but it might also not be enough as there are so many things to take into account when looking at sidewalks such as when was the last time it was made, how much foot traffic does it receive. And also there is another issue of if we do decide on giving a certain  area a better sidewalk route how would that affect the foot traffic on other areas and increase/decrease their respective scores?
+
+
+What are your next steps? Divide tasks amongst the team
+We have not yet had a team meeting to discuss how we will go about splitting up the tasks

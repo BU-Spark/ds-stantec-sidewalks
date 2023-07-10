@@ -33,6 +33,8 @@ The following datasets were used in this project:
 We show most of the result we get in map, it can be found in folder data. Map  will show you the sidewalks on a map and allow you to view each sidewalks ID by hovering over it and also see each sidewalks score by clicking on it.
 
 ## **HOW TO GET SIDEWALK SCORES**
+If you want to replicate our sidewalk score you will need to download the Ramps New.json and the Sidewalks.json file that the client provided us with. then you simply need to run the scores.ipynb file and it will create a file called sidewalks_map.html Which will show you the sidewalks on a map and allow you to view each sidewalks ID by hovering over it and also see each sidewalks score by clicking on it. If you wish to use different sidewalks/ramps than what the client provided then you would simply need to make sure the file has the same collumns as the ones that we use and either name the files the same so that you wont have to change any code.
+
 
 #### Source
 

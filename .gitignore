@@ -168,3 +168,9 @@ $RECYCLE.BIN/
 
 # .nfs files are created when an open file is removed but is still being accessed
 .nfs*
+
+# customize
+spring23-team-2/deliverables/deliverable_2/data
+spring23-team-2/deliverables/data
+spring23-team-2/deliverables/deliverable_3/maps
+spring23-team-2/deliverables/deliverable_4/maps
